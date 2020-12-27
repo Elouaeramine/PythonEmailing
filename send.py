@@ -8,7 +8,7 @@ from send_mail import send_mail
 def send(name, website=None, to_email=None, verbose=False):
     assert to_email != None
     if website != None:
-        msg = format_msg(my_name=name, my_website=website)
+        msg = format_msg(my_name=name)
     else:
         msg = format_msg(my_name=name)
     if verbose:

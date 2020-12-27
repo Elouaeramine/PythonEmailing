@@ -18,6 +18,7 @@ def send_mail(text='Email Body', subject='Hello world!', from_email ='John Doe <
     msg.attach(txt_part)
 
     if html != None:
+        
         html_part = MIMEText(html, 'html')
         msg.attach(html_part)
 
